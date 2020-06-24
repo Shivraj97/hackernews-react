@@ -1,0 +1,28 @@
+{
+  "name": "hackernews-node",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "prisma deploy",
+    "generate": "prisma generate",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build": "babel src -d build",
+    "start": "node src/index.js",
+    "prisma": "yarn run deploy && yarn run generate",
+    "postbuild":" cd src && copy resolvers/*.graphql ../build/resolvers/"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/runtime": "^7.10.3",
+    "bcryptjs": "^2.4.3",
+    "copy": "^0.3.2",
+    "graphql-yoga": "^1.7.0",
+    "jsonwebtoken": "^8.2.0",
+    "prisma-client-lib": "^1.31.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "prisma": "^1.31.0"
+  }
+}

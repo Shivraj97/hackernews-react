@@ -1,0 +1,11 @@
+.env*
+dist
+package-lock.json
+/node_modules
+.idea
+.vscode
+*.log
+
+generated
+prisma.yml
+build
