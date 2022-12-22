@@ -18,7 +18,7 @@
     "bcryptjs": "^2.4.3",
     "copy": "^0.3.2",
     "graphql-yoga": "^1.7.0",
-    "jsonwebtoken": "^8.2.0",
+    "jsonwebtoken": "^9.0.0",
     "prisma-client-lib": "^1.31.0"
   },
   "devDependencies": {
